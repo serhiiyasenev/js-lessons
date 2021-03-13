@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <pre style="font-size: 40px; font-weight: bold; font-family: Helvetica, sans-serif;" id="readyState"></pre>
+    <script>
+        // document.readyState — возвращает строку, содержащую статус текущего документа
+
+        // 1. uninitialized - процесс загрузки ещё не начался
+        // 2. loading - идёт процесс загрузки
+        // 3. loaded - загрузка HTML кода завершена
+        // 4. interactive - документ достаточно загружен для того, чтобы пользователь мог взаимодействовать с ним. 
+        //                  Код JavaScript может начать выполняться только на этом этапе
+        // 5. complete - документ полностью загружен
+
+        const readyState = document.readyState;
+        let str = `Статусы документа:\n${readyState}\n`;
+        document.getElementById("readyState").innerHTML = str;
+
+        document.onreadystatechange = () => {
+            const readyState = document.readyState;
+            str += `${readyState}\n`;
+            document.getElementById("readyState").innerHTML = str;
+        }
+    </script>
+</body>
+</html>

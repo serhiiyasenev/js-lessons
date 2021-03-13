@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">wrapper</div>
+
+    <script>
+        const element = document.getElementById('wrapper');
+        const greeting = 'Hello Lectrum!';
+        const p = `<p style='color: green;' id='greeting'>
+                    ${greeting}
+                </p>`;
+
+        element.insertAdjacentHTML('afterbegin', p);
+    </script>
+</body>
+</html>

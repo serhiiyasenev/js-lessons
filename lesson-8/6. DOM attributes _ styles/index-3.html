@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .wrapper {
+            display: inline-block;
+            border: 1px solid red;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .greeting {
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <p class="greeting">Первый</p>
+        </div>
+
+        <script>
+            const wrapper = document.querySelector('.wrapper');
+
+            setTimeout(() => {
+                // const wrapper2 = wrapper.cloneNode(); !!! shallow copy
+                const wrapper2 = wrapper.cloneNode(true);
+                wrapper2.querySelector('p').innerHTML = 'Второй';
+                wrapper.after(wrapper2);
+            }, 3000);
+
+        </script>
+    </body>
+</html>

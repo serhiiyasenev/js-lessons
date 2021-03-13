@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p data-id="1">Hello Lectrum!</p>
+        <p data-id="2">Hello friends!</p>
+        <div id="footer">
+            <p data-id="3">&copy; Lectrum LLC</p>
+        </div>
+    </div>
+
+    <script>
+        const wrapper = document.getElementById('wrapper');
+        const elements = wrapper.getElementsByTagName('*');
+
+        console.dir(elements);
+
+        for (let i = 0; i < elements.length; i++) {
+            console.log('ID:',elements[i].getAttribute('data-id'));
+        }
+    </script>
+</body>
+</html>

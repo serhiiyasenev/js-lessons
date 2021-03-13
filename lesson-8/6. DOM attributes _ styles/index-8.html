@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li data-id="1">John Doe</li>
+        </ul>
+
+        <script>
+            const listElements = document.querySelectorAll('ul > li');
+
+            console.log(listElements);
+            for (let i = 0; i < listElements.length; i++) {
+                const element = listElements[i];
+                
+                console.log(element.dataset);
+                console.log('element.dataset.id:', element.dataset.id);
+                console.log('element.getAttribute(\'data-id\'):', element.getAttribute('data-id'));
+            }
+        </script>
+    </body>
+</html>

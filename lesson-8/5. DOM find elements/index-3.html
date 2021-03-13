@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p data-id="1">Hello Lectrum!</p>
+        <p class="sub-title" data-id="2">Hello friends!</p>
+        <div id="footer">
+            <p class="sub-title active" data-id="3">&copy; Lectrum LLC</p>
+        </div>
+    </div>
+
+    <script>
+        console.time('getElementById');
+        document.getElementById('#wrapper');
+        console.timeEnd('getElementById');
+
+        console.time('querySelector');
+        document.querySelector('#wrapper');
+        console.timeEnd('querySelector');
+    </script>
+</body>
+</html>

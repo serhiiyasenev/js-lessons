@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <pre style="font-size: 40px; font-weight: bold; font-family: Helvetica, sans-serif;" id="readyState"></pre>
+    <script>
+        // document.lastModified — возвращает строку, содержащую адрес (URL) страницы, 
+        // с которой пользователь пришёл на эту страницу.
+
+        // 1. Открыть гугл и ввести там lectrum
+        // 2. В поиске найти и перейти на страницу lectrum.io 
+        // 3. В консоли разработчика Chrome ввести — document.referrer
+        console.dir(`document.referrer: '${document.referrer}'`);
+    </script>
+</body>
+</html>

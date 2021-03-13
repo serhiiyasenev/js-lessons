@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .greeting {
+                font-size: 40px;
+                color: red;
+                margin: 20px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="greeting" class="greeting">Hello Lectrum!!!</p>
+
+        <script>
+            const greeting = document.getElementById('greeting');
+
+            console.log('greeting.style.marginTop:', greeting.style.marginTop);
+            console.log('getComputedStyle(greeting).marginTop', getComputedStyle(greeting).marginTop);
+        </script>
+    </body>
+</html>

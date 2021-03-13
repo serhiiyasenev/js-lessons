@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .greeting {
+                font-size: 40px;
+            }
+
+            .active {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="greeting" class="greeting active">Hello Lectrum!!!</p>
+
+
+        <script>
+            const greeting = document.getElementById('greeting');
+            // greeting.classList.contains("class name") – проверяет есть ли у элемента класс с указанным именем и возвращает true/false.
+            // greeting.classList.add/remove("class name") – добавляет/удаляет класс с указанным именем
+            // greeting.classList.toggle("class name") – если класса с указанным именем нет, добавляет его, если есть – удаляет.
+   
+            console.log(greeting.classList);
+
+            setTimeout(() => {
+                greeting.classList.remove('active');
+            }, 3000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <p id="greeting">Hello Lectrum!</p>
+    </div>
+    <script>
+        const elements = document.querySelectorAll('#wrapper');
+
+        console.dir(elements);
+        console.dir(elements.length);
+        
+        console.dir(Array.isArray(elements));
+        console.dir(Array.from(elements));
+    </script>
+</body>
+</html>

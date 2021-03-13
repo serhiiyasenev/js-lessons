@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <ul id="list">
+            <li id="id-0">User: 0</li>
+            <li id="id-1">User: 1</li>
+            <li id="id-2">User: 2</li>
+        </ul>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            const li = document.getElementById('id-0');
+            
+            li.parentNode.remove();
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <p class="main">Hello Lectrum!</p>
+    </div>
+    <script>
+        const elementsNodeList = document.querySelectorAll('.main');
+        const elementsCollection = document.getElementsByClassName('main');
+
+        // forEach, item, entries, keys, values
+        console.dir(elementsNodeList);
+        console.dir(elementsNodeList.forEach);
+
+        // item, namedItem
+        console.dir(elementsCollection);
+        console.dir(elementsCollection.forEach);
+    </script>
+</body>
+</html>
