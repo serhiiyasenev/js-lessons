@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fetch": "^1.1.0",
     "process": "^0.11.10",
     "puppeteer": "^10.4.0"
   }
